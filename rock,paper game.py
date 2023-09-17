@@ -1,7 +1,7 @@
 import tkinter as tk
 import random
 
-# Function to determine the winner
+# Function to the winner
 def determine_winner(user_choice, computer_choice):
     if user_choice == computer_choice:
         return "It's a tie!"
@@ -48,9 +48,9 @@ y = (screen_height - window_height) // 2
 window.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
 # Create a Canvas widget to display the image
-# Load and display the image using PhotoImage (replace 'image.gif' with your image file path)
-image = tk.PhotoImage(file="D:\inter code\intern.png")  # Use the appropriate image file format
-image= image.zoom(1)# add zoom command od code
+# Load and display the image using PhotoImage ( your image file path)
+image = tk.PhotoImage(file="D:\inter code\intern.png")  # Use the image file format
+image= image.zoom(1)# add zoom command code
 #image=image.subsample(1)# decrease resolution of image
 image_label2 = tk.Label(window, image=image)
 image_label2.place(x=150,y=40)
@@ -69,5 +69,5 @@ scissors_button.place(x=300, y=290)
 result_label = tk.Label(window, text="", bg="white",fg="red", font=("Helvetica", 12))
 result_label.place(x=140, y=350)
 
-# Run the Tkinter main loop
+# main window call
 window.mainloop()
