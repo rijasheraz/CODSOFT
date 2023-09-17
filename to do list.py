@@ -24,6 +24,7 @@ window.geometry(f"{window_width}x{window_height}+{x}+{y}")
 frame_task = Frame(window)
 frame_task.pack()
 
+#add fuction 
 def entertask():
     # A new window to pop up to take input
     input_text = ""
@@ -57,6 +58,7 @@ def entertask():
     root1.geometry(f"{root1_width}x{root1_height}+{x}+{y}") 
     root1.mainloop()
 
+#delet function
 def deletetask():
     
     # Selects the selected item and then deletes it 
@@ -66,6 +68,7 @@ def deletetask():
         return
     listbox_task.delete(selected[0])
 
+#complet function
 def markcompleted():
     marked = listbox_task.curselection()
     if not marked:
@@ -80,6 +83,7 @@ def markcompleted():
     listbox_task.delete(temp)
     listbox_task.insert(temp, temp_marked)
 
+#update function
 def updatetask():
     selected = listbox_task.curselection()
     if not selected:
@@ -139,4 +143,5 @@ delete_button.place(x=310,y=370)
 mark_button = Button(window, text="Mark as completed", width=30, command=markcompleted)
 mark_button.place(x=310,y=400)
 
+#main window
 window.mainloop()
