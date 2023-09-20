@@ -7,7 +7,8 @@ window = Tk()
 # Giving a title
 window.title(" Python To-Do List ")
 window.configure(bg="white")
-window.geometry("600x450")
+#resize image
+window.resizable(0,0)
 
 # Get the screen width and height to center the window
 screen_width = window.winfo_screenwidth()
@@ -143,5 +144,5 @@ delete_button.place(x=310,y=370)
 mark_button = Button(window, text="Mark as completed", width=30, command=markcompleted)
 mark_button.place(x=310,y=400)
 
-#main window
+#main window calling
 window.mainloop()
