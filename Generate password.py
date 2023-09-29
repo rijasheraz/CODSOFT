@@ -26,7 +26,7 @@ def generate_password():
 # Create the main window
 window = tk.Tk()
 window.title(" Generate Password ")
-length_label = ttk.Label(window, text="GENERATE PASSWORD ", font=("Times New Roman", 15,"bold"))
+length_label = ttk.Label(window, text="PASSWORD GENERATOR ", font=("Times New Roman", 15,"bold"))
 length_label.place(x=100, y=10)
 #resize image
 window.resizable(0,0)
